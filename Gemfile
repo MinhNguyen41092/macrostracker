@@ -25,6 +25,8 @@ gem 'foursquare2'
 gem 'symmetric-encryption'
 
 # Assets
+gem 'bootstrap-sass'
+gem 'bootstrap-social-rails'
 gem 'puma', '~> 3.0'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
