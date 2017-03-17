@@ -3,10 +3,10 @@
 		<div class="col-sm-4 col-sm-offset-4">
 
 			<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-				<h3 class="text-center">Welcome back</h2>
+				<h3 class="text-center">Welcome back</h3>
 				<div class="form-group">
-					<%= f.label :email %><br />
-					<%= f.email_field :email, autofocus: true, class: 'form-control input-xl text-center', placeholder: "Email" %>
+					<%= f.label :login %><br />
+					<%= f.text_field :login, autofocus: true, class: 'form-control input-xl text-center', placeholder: "Email or Username" %>
 				</div>
 
 				<div class="form-group">
