@@ -3,17 +3,12 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
-	attr_accessor :email,
-    :password,
-    :password_confirmation,
-    :remember_me,
-    :username,
-    :login
+	attr_accessor :login
   
 	validates :username,
  		presence: true, 
  		uniqueness: {
- 			case_sensitive: false
+ 			case_sensitive: true
    		}
   # Only allow letter, number, underscore and punctuation.
 	validates_format_of :username, with: /^[a-zA-Z0-9_\.]*$/, :multiline => true
