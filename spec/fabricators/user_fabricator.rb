@@ -1,6 +1,6 @@
 Fabricator(:user) do
 	username 'dinhminh'
-	email { |attrs| "#{attrs[:username].parameterize}@example.com" } 
+	email 'dinhminh@example.com' 
 	password 'dinhminh'
 	password_confirmation 'dinhminh'
 end
