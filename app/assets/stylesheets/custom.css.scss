@@ -1,9 +1,29 @@
-h1 {
-	text-align: center;
+body {
+	background-image: image-url('keit-trysh-167890.jpg');
+	background-size: 100% auto;
 }
 
-.footer {
-  margin-top: 25px;
-  border-top: 1px solid #eaeaea;
-  color: #777;
+h1 {
+	text-align: center;
+	color: white !important;
 }
+
+.navbar-brand  {
+ 	color: white;
+ }
+ 
+.nav > li >a {
+	color: white;
+}
+
+#weight {
+	width: 45% !important;
+	display: inline-block;
+}
+
+#height {
+	float: right;
+	width: 45% !important;
+	display: inline-block;
+}
+
