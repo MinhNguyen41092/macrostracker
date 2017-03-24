@@ -14,9 +14,13 @@ class InformationsController < ApplicationController
 		end
 	end
 	
+	def show
+		@information = Information.find(params[:id])
+	end
+	
 	private
 		
 		def information_params
-			params.require(:information).permit(:weight, :height, :gender, :activity_level, :user_id)
+			params.require(:information).permit(:weight, :height, :age, :gender, :activity_level, :user_id)
 		end
 end

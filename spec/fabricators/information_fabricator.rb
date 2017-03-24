@@ -6,3 +6,5 @@ Fabricator(:information) do
 	activity_level 4
 	user_id 2	
 end
+
+

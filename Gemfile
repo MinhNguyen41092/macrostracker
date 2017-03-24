@@ -75,6 +75,7 @@ group :test do
   gem 'email_spec'
   gem 'webmock'
   gem 'fuubar'
+  gem 'rails-controller-testing'
 end
 
 group :production do
