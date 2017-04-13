@@ -1,4 +1,4 @@
 class SessionsController < Devise::SessionsController 
-  respond_to :html, :json
+  respond_to :html, :js
   
 end
