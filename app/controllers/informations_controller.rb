@@ -6,6 +6,7 @@ class InformationsController < ApplicationController
 	
 	def create
 		@information = Information.new(information_params)
+		@information.user_id = current_user.id
 		if @information.save
 			flash[:success] = "Your information has been saved"
 			redirect_to root_path
