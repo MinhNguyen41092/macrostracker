@@ -1,3 +1,3 @@
-m = $("#modal");
-m.html('<%= j(render partial: 'login_form') %>');
+m = $('#mymodal');
+m.html('<%= j render 'devise/sessions/login_form' %>');
 m.modal('show');

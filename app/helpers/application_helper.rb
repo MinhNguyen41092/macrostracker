@@ -1,4 +1,5 @@
 module ApplicationHelper
+  
 	def nav_link text, link, icon={}
     icon = {
       size: "1x"
@@ -16,4 +17,6 @@ module ApplicationHelper
       end
     end
   end
+  
+  
 end
