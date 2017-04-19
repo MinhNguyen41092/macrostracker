@@ -12,13 +12,12 @@
   <body>
     <div id="mymodal" class="modal fade" ></div>
 		<%= render 'layouts/navigation' %>
-		<p class="notice"><%= notice %></p>
-  	<p class="alert"><%= alert %></p>
 		<div class="container">
 		  <%= render 'layouts/messages' %>
 
 		  <%= yield %>
-
+      <p class="notice"><%= notice %></p>
+  	  <p class="alert"><%= alert %></p>
 		</div>
   </body>
 </html>

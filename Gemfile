@@ -24,6 +24,8 @@ gem 'withings', github: 'jdjkelly/withings'
 gem 'fitgem'
 gem 'foursquare2'
 gem 'symmetric-encryption'
+gem 'active_model_serializers'
+gem 'rack-cors'
 
 # Assets
 gem 'bootstrap-sass'
