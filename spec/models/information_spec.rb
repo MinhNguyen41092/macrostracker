@@ -36,4 +36,5 @@ RSpec.describe Information, type: :model do
   	information = Fabricate.build(:information, user_id: nil)
   	expect(information).not_to be_valid
   end
+  
 end

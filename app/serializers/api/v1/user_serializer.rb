@@ -1,5 +1,5 @@
 class Api::V1::UserSerializer < Api::V1::BaseSerializer
-  attributes :id, :email, :username, :password, :created_at, :updated_at
+  attributes :id, :email, :username, :created_at, :updated_at
   
   has_many :informations, embed: :ids
 end
