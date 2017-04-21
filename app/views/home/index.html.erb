@@ -1,3 +1,8 @@
 <h1>Welcome to MacrosTracker</h1>
 
+<div class="btn-count">
+  <% if user_signed_in? %>
+    <%= link_to "Count your daily macros", new_information_path, class: 'btn btn-md btn-primary' %>
+  <% end %>
+</div>
 
