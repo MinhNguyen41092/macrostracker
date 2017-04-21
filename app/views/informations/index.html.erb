@@ -1,0 +1,9 @@
+<div class="container-fluid" id="info">
+  <% @informations.each do |info| %>
+    <div class="jumbotron" id = "jumb">
+      <%= link_to info.created_at, information_path(info), class: 'text-center' %><br/><br/>
+      
+      Age: <%= info.age %>, Weight: <%= info.weight %>kg, Height: <%= info.height %>cm
+    </div>
+  <% end %>
+</div>

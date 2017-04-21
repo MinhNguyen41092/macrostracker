@@ -7,13 +7,22 @@
         <th class="text-center">Protein</th>
         <th class="text-center">Carb</th>
         <th class="text-center">Fat</th>
-        <th class="text-center">Sugar</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td class="text-center"><strong><%= @information.result %> kcal/day</strong></td>
+        <td class="text-center"><strong><%= "%.2f" % @information.result %> kcal/day</strong></td>
+      
+      
+        <td class="text-center"><strong><%= "%.2f" % @information.protein %> gr/day</strong></td>
+      
+      
+        <td class="text-center"><strong><%= "%.2f" % @information.carb %> gr/day</strong></td>
+      
+      
+        <td class="text-center"><strong><%= "%.2f" % @information.fat %> gr/day</strong></td>
       </tr>
+      
     </tbody>
   </table>
 </div>

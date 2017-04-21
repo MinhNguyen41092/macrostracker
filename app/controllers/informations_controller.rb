@@ -1,6 +1,10 @@
 class InformationsController < ApplicationController
 	before_action :authenticate_user!
 	
+	def index
+	  @informations = Information.where(user_id: current_user.id).all
+	end
+	
 	def new
 		@information = Information.new
 	end
@@ -10,16 +14,17 @@ class InformationsController < ApplicationController
 		@information.user_id = current_user.id
 		Information.calBMR(@information)
 		Information.calResult(@information)
+		Information.calMacros(@information)
 		if @information.save
 			flash[:success] = "Your information has been saved"
-			redirect_to information_path
+			redirect_to informations_path
 		else
 			render 'new'
 		end
 	end
 	
 	def show
-		@information = Information.last
+		@information = Information.find(params[:id])
 	end
 	
 	private

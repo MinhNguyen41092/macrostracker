@@ -6,8 +6,7 @@ Rails.application.routes.draw do
   }
   
   resources :users, only: [:show]
-  resources :informations, except: [:index]
-  post "informations/create"
+  resources :informations
     
   root to: "home#index"
 end
