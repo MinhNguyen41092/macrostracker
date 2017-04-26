@@ -1,11 +1,17 @@
 body {
 	background-image: image-url('sport-1882719_1920.jpg');
 	background-size: 100% auto;
+	background-repeat: no-repeat;
 }
 
 h1 {
 	text-align: center;
 	color: white !important;
+}
+
+#des {
+  color: white;
+  margin-bottom: 30px;
 }
 
 .navbar-brand  {

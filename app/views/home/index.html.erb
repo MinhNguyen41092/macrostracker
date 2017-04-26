@@ -3,6 +3,10 @@
 <div class="btn-count">
   <% if user_signed_in? %>
     <%= link_to "Count your daily macros", new_information_path, class: 'btn btn-md btn-primary' %>
+    
+  <% else %>
+    <div class="text-center" id="des"><h4>Track your fitness journey and much more</h4></div>
+    <%= link_to "Subcribe now", new_user_registration_path, class: 'btn btn-md btn-success' %>
   <% end %>
 </div>
 
